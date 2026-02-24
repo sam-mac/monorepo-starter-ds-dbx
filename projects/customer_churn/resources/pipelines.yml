@@ -1,0 +1,16 @@
+resources:
+  pipelines:
+    customer_churn_features:
+      name: customer_churn_features
+      development: true
+      continuous: false
+      channel: CURRENT
+      edition: CORE
+      clusters:
+        - label: default
+          num_workers: 1
+      catalog: ${var.catalog}
+      target: ${var.schema}
+      libraries:
+        - notebook:
+            path: ./notebooks/20_lakeflow_features.py

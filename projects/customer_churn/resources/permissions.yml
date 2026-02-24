@@ -1,0 +1,2 @@
+# Optional: If you prefer per-resource permissions, define them here.
+# This repo uses top-level permissions in databricks.yml by default.

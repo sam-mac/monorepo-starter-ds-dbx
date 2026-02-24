@@ -1,0 +1,4 @@
+env: dev
+catalog: main_dev
+schema: customer_churn_dev
+features_table: features_customer_churn
